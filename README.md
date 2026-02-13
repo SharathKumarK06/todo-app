@@ -8,7 +8,7 @@ Todo application in golang
 - ORM - `GORM`
 - API - `REST API`
 
-## Installation of dependencies
+### Installation of dependencies
 - Database setup
 ```bash
 docker run --name postgres \
@@ -22,8 +22,20 @@ docker run --name postgres \
 ```bash
 go mod tidy
 ```
+- Check db/tables inside container
+```bash
+docker exec -it postgres psql -U todo -d todo_db
+```
 
-### Endpoints
+```postgresql
+-- Show tables
+\dt
+
+-- Show entries of `todos` table
+SELECT * FROM todos;
+```
+
+## Endpoints
 ```
 GET     /todos
 POST    /todos
