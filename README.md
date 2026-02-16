@@ -1,5 +1,5 @@
-# todo-golang
-Todo application in golang
+# todo-api
+API for todo app in golang
 
 ## Dependencies
 - Web framework - `Gin`
