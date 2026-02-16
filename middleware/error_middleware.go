@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/SharathKumarK06/todo-app/utils"
+	"github.com/SharathKumarK06/todo-api/utils"
 	"github.com/gin-gonic/gin"
 )
 

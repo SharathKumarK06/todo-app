@@ -1,4 +1,4 @@
-module github.com/SharathKumarK06/todo-app
+module github.com/SharathKumarK06/todo-api
 
 go 1.25.0
 

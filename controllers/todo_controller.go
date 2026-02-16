@@ -4,9 +4,9 @@ import (
   "net/http"
 
   "github.com/gin-gonic/gin"
-  "github.com/SharathKumarK06/todo-app/config"
-  "github.com/SharathKumarK06/todo-app/models"
-  "github.com/SharathKumarK06/todo-app/utils"
+  "github.com/SharathKumarK06/todo-api/config"
+  "github.com/SharathKumarK06/todo-api/models"
+  "github.com/SharathKumarK06/todo-api/utils"
 )
 
 func CreateTodo(c *gin.Context) {

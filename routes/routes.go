@@ -2,7 +2,7 @@ package routes
 
 import (
   "github.com/gin-gonic/gin"
-  "github.com/SharathKumarK06/todo-app/controllers"
+  "github.com/SharathKumarK06/todo-api/controllers"
 )
 
 func SetupRouter(r *gin.Engine) {
