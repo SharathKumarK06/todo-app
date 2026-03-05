@@ -9,39 +9,18 @@ API for todo app in golang
 - API - `REST API`
 
 ### Installation of dependencies
-- Database setup
+- Install `docker` and `docker-compose-v2`
+- Setup full application
 ```bash
-docker run --name postgres \
-  -e POSTGRES_USER=todo \
-  -e POSTGRES_PASSWORD=pass \
-  -e POSTGRES_DB=todo_db \
-  -p 5432:5432 \
-  -d postgres
-```
-- Install go dependencies
-```bash
-go mod tidy
-```
-- Check db/tables inside container
-```bash
-docker exec -it postgres psql -U todo -d todo_db
-```
-
-```sql
--- Show tables
-\dt
-
--- Show entries of `todos` table
-SELECT * FROM todos;
+git clone https://github.com/SharathKumarK06/todo-api
+cd todo-api
+docker compose up --build -d
 ```
 
 ## Endpoints
 ```
-GET     /todos
-POST    /todos
-PUT     /todos/:id
-DELETE  /todos/:id
+GET     /todos          List todos
+POST    /todos          Create new todo {"title": "Title of todo", "completed": false}
+PUT     /todos/:id      Update todo {"title": "New title of todo", "completed": false}
+DELETE  /todos/:id      Delete todo
 ```
-
-
-
